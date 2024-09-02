@@ -32,3 +32,5 @@ const teamMembers = [
         image: "barbara-ramos-graphic-designer.jpg"
     }
 ];
+
+
