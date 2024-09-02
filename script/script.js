@@ -47,3 +47,23 @@ teamMembers.forEach(member => {
     teamContainer.appendChild(memberInfo);
 });
 
+teamMembers.forEach(member => {
+    const memberDiv = document.createElement('div');
+    memberDiv.classList.add('team-member');
+
+    const memberName = document.createElement('h3');
+    memberName.textContent = member.name;
+    memberDiv.appendChild(memberName);
+
+    const memberRole = document.createElement('p');
+    memberRole.textContent = member.role;
+    memberDiv.appendChild(memberRole);
+
+    const memberImage = document.createElement('img');
+    memberImage.src = `img/${member.image}`;
+    memberImage.alt = `${member.name}`;
+    memberDiv.appendChild(memberImage);
+
+    teamContainer.appendChild(memberDiv);
+});
+
