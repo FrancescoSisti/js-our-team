@@ -37,3 +37,13 @@ teamMembers.forEach(member => {
     console.log(`Nome: ${member.name}, Ruolo: ${member.role}, Immagine: ${member.image}`);
 });
 
+const teamContainer = document.createElement('div');
+teamContainer.id = 'team-container';
+document.body.appendChild(teamContainer);
+
+teamMembers.forEach(member => {
+    const memberInfo = document.createElement('p');
+    memberInfo.textContent = `Nome: ${member.name}, Ruolo: ${member.role}, Immagine: ${member.image}`;
+    teamContainer.appendChild(memberInfo);
+});
+
