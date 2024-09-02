@@ -33,4 +33,7 @@ const teamMembers = [
     }
 ];
 
+teamMembers.forEach(member => {
+    console.log(`Nome: ${member.name}, Ruolo: ${member.role}, Immagine: ${member.image}`);
+});
 
